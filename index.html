@@ -3,69 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hidro Kourkis | Junior Javautvecklare</title>
-  <meta name="description" content="Portfolio – Hidro Kourkis, nyexaminerad junior Javautvecklare." />
+  <title>Hidro Kourkis | Java Backend Developer</title>
+  <meta name="description" content="Hidro Kourkis – Java backend developer focused on clean architecture, APIs and AI integration." />
+
+  <!-- Open Graph (pro share preview) -->
+  <meta property="og:title" content="Hidro Kourkis – Java Backend Developer" />
+  <meta property="og:description" content="Backend-focused Java developer. Clean architecture, REST APIs, Docker, AI integration." />
+  <meta property="og:type" content="website" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
 <header class="topbar">
   <div class="container topbar-inner">
     <a class="logo" href="#top">Hidro<span>.</span></a>
 
-    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-expanded="false">
-      ☰
-    </button>
+    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-expanded="false">☰</button>
 
     <nav class="nav" id="nav">
-      <a href="#about">Om</a>
-      <a href="#education">Utbildning</a>
-      <a href="#experience">Erfarenhet</a>
-      <a href="#projects">Projekt</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Kontakt</a>
+  <a href="#about">Om</a>
+  <a href="#focus">Fokus</a>
+  <a href="#featured">Featured</a>
+  <a href="#projects">Projekt</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Kontakt</a>
 
-      <button class="icon-btn theme" id="themeBtn" aria-label="Byt tema" title="Byt tema">
-        🌙
-      </button>
-    </nav>
+  <button class="icon-btn" id="langBtn" aria-label="Change language" title="Change language">EN</button>
+  <button class="icon-btn theme" id="themeBtn" aria-label="Byt tema" title="Byt tema">🌙</button>
+</nav>
   </div>
 </header>
 
 <main id="top">
+  <!-- HERO (Brand) -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="reveal">
-        <p class="pill">Nyexaminerad • Junior</p>
-        <h1>Hidro Kourkis</h1>
-        <p class="subtitle">Junior Javautvecklare</p>
+        <p class="pill">Java • Backend • AI integration</p>
+
+        <h1 class="headline">
+          Building reliable backend systems with Java.
+        </h1>
+
         <p class="lead">
-          Lösningsorienterad och analytisk utvecklare med erfarenhet från LIA i skarpa projekt.
-          Intresse för backend, AI-integration och teknik.
+          Nyexaminerad Javautvecklare med praktisk erfarenhet från LIA i skarpa projekt.
+          Jag bygger strukturerade API:er, jobbar gärna med databaser och Docker,
+          och har erfarenhet av att integrera AI-flöden med Java & Python.
         </p>
 
         <div class="cta">
-          <a class="btn" href="#projects">Se projekt</a>
+          <a class="btn" href="#featured">Se featured case</a>
+          <a class="btn ghost" href="#projects">Projekt</a>
           <a class="btn ghost" href="assets/examensbevis.pdf" target="_blank" rel="noreferrer">Examensbevis (PDF)</a>
-          <a class="btn ghost" href="#contact">Kontakta mig</a>
         </div>
 
         <div class="meta">
-          <span>📍 Stockholm / Norsborg</span>
-          <span>💼 Öppen för juniorroll</span>
+          <span>📍 Stockholm/Solna</span>
+          <span>💼 Öppen för juniorroll / trainee</span>
+          <span>🚗 B-körkort</span>
         </div>
       </div>
 
       <aside class="card contact-card reveal">
-        <h2>Kontakt</h2>
+        <h2>Contact</h2>
         <p><strong>Email:</strong> <a class="link" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM</a></p>
-        <p><strong>Telefon:</strong> +46 79-077 41 61</p>
+        <p><strong>Phone:</strong> <a class="link" href="tel:+46790774161">+46 79-077 41 61</a></p>
         <p><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noreferrer">linkedin.com/in/hidro-kourkis</a></p>
-        <p class="muted small"></p>
+        <p><strong>GitHub:</strong> <a class="link" href="https://github.com/officialhkgg" target="_blank" rel="noreferrer">github.com/officialhkgg</a></p>
+        <div class="mini">
+          <span class="chip">Java</span>
+          <span class="chip">Spring</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Docker</span>
+        </div>
       </aside>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
       <div class="section-head reveal">
@@ -77,123 +93,127 @@
         <div class="card reveal">
           <h3>Profil</h3>
           <p>
-            Jag är driven och ansvarsfull, trivs i team och tar gärna ansvar.
-            Jag jobbar strukturerat, gillar att felsöka och leverera kvalitet.
+            Jag är driven och ansvarsfull, trivs i team och tar gärna ansvar för att
+            leverera stabila lösningar. Jag jobbar strukturerat, gillar att felsöka och
+            strävar efter ren, underhållbar kod.
+          </p>
+          <p class="muted small">
+            Styrkor: problemlösning, noggrannhet, kommunikation, stresstålighet.
           </p>
         </div>
+
         <div class="card reveal">
-          <h3>Intressen</h3>
+          <h3>Bakgrund</h3>
           <p>
-            IT och teknik — på fritiden bygger jag datorer, vilket har stärkt min
-            problemlösning och tekniska förståelse.
+            YH-examen som Javautvecklare (Nackademin, 2023–2025) med två LIA-perioder där jag
+            jobbat i skarpa team och leveranser.
+          </p>
+          <p class="muted small">
+            På fritiden bygger jag datorer — det har gett mig teknisk förståelse och bra felsökningsvana.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="education" class="section alt">
+  <!-- FOCUS (Brand positioning) -->
+  <section id="focus" class="section alt">
     <div class="container">
       <div class="section-head reveal">
-        <h2>Utbildning</h2>
-        <p class="muted">Nyexaminerad Javautvecklare (YH).</p>
+        <h2>What I focus on</h2>
+        <p class="muted"></p>
       </div>
 
-      <div class="card reveal">
-        <div class="row">
-          <h3>Nackademin – Javautvecklare (2023–2025)</h3>
-          <span class="muted">YH-examen</span>
+      <div class="grid-3">
+        <div class="card reveal">
+          <h3>Backend & APIs</h3>
+          <p class="muted">
+            Designar REST API:er, service-lager och tydliga domänmodeller med fokus på struktur och kvalitet.
+          </p>
         </div>
+
+        <div class="card reveal">
+          <h3>Databaser & Docker</h3>
+          <p class="muted">
+            Jobbar gärna med SQL och containerisering för robusta, reproducerbara miljöer och deploy-flöden.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>AI integration</h3>
+          <p class="muted">
+            Integrerar AI-flöden i system — t.ex. OpenCV/ML i Python kopplat till Java backend och API:er.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CASE STUDY (this is what makes it look pro) -->
+  <section id="featured" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Featured case</h2>
+        <p class="muted"></p>
+      </div>
+
+      <article class="card featured reveal">
+        <div class="row">
+          <h3>AI-Integration i plattform (LIA – Spend Ninja)</h3>
+          <span class="muted">Java + Python + OpenCV</span>
+        </div>
+
         <p class="muted">
-          Fokus: OOP, designmönster, backend, databaser, DevOps, IT-säkerhet, frontend, LIA.
+          <strong>Problem:</strong> Plattformen behövde smartare automation/bildanalys för att minska manuellt arbete.
         </p>
-        <a class="link" href="assets/examensbevis.pdf" target="_blank" rel="noreferrer">Öppna examensbevis (PDF)</a>
-      </div>
+        <p class="muted">
+          <strong>Lösning:</strong> Byggde AI-funktioner med OpenCV/ML och integrerade dem i plattformen via Java backend.
+        </p>
 
-      <div class="card reveal">
-        <div class="row">
-          <h3>S:t Botvids Gymnasium – Ekonomi (2017–2020)</h3>
-          <span class="muted">Företagsekonomi</span>
+        <div class="kv">
+          <div><span class="k">Tech</span><span class="v">Java, Python, OpenCV, REST, Docker</span></div>
+          <div><span class="k">Ansvar</span><span class="v">Utveckling, integration, testning, förbättringar</span></div>
+          <div><span class="k">Lärdom</span><span class="v">Integration mellan ML-flöden och backend, robusthet i pipeline</span></div>
         </div>
-      </div>
+
+        <div class="links">
+          <a class="btn small ghost" href="#projects">Se fler projekt</a>
+          <a class="btn small" href="#contact">Kontakta mig</a>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Erfarenhet</h2>
-        <p class="muted">LIA + arbetslivserfarenhet.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="card reveal">
-          <div class="row">
-            <h3>Javautvecklingspraktikant – Spend Ninja</h3>
-            <span class="muted">2025-01-20 → 2025-04-11</span>
-          </div>
-          <ul>
-            <li>AI-lösningar med OpenCV och maskininlärning</li>
-            <li>Integration med Java och Python</li>
-          </ul>
-        </div>
-
-        <div class="card reveal">
-          <div class="row">
-            <h3>Javautvecklingspraktikant – Linespotting AB</h3>
-            <span class="muted">2024-10-07 → 2024-12-20</span>
-          </div>
-          <ul>
-            <li>Java backend i skarpa projekt</li>
-            <li>Samarbete i team</li>
-          </ul>
-        </div>
-
-        <div class="card reveal">
-          <div class="row">
-            <h3>Butikssäljare – Bauhaus</h3>
-            <span class="muted">2018–2023</span>
-          </div>
-          <ul>
-            <li>Kundservice & rådgivning</li>
-            <li>Ansvar i högt tempo</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- PROJECTS (auto from JS) -->
   <section id="projects" class="section alt">
     <div class="container">
       <div class="section-head reveal">
         <h2>Projekt</h2>
-        <p class="muted">Laddas automatiskt från JavaScript.</p>
+        <p class="muted"></p>
       </div>
-
       <div id="projectsGrid" class="projects"></div>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
       <div class="section-head reveal">
         <h2>Skills</h2>
-        <p class="muted">Progress bars + verktyg.</p>
+        <p class="muted"></p>
       </div>
 
       <div class="grid-2">
         <div class="card reveal">
-          <h3>Teknik</h3>
+          <h3>Core skills</h3>
           <div id="skillsList" class="skills"></div>
           <p class="muted small"></p>
         </div>
 
         <div class="card reveal">
-          <h3>Verktyg</h3>
-          <p class="muted">
-            VS Code, IntelliJ IDEA, MySQL Workbench, Docker Desktop, PyCharm, Visual Studio, Microsoft Office
-          </p>
-          <h3>Språk</h3>
+          <h3>Tools</h3>
+          <p class="muted">IntelliJ IDEA, VS Code, MySQL Workbench, Docker Desktop, PyCharm, Visual Studio, Microsoft Office</p>
+          <h3>Languages</h3>
           <ul class="muted">
             <li>Svenska – Modersmål</li>
             <li>Engelska – Flytande</li>
@@ -204,57 +224,55 @@
     </div>
   </section>
 
+  <!-- CONTACT (Formspree + toast) -->
   <section id="contact" class="section alt">
     <div class="container">
       <div class="section-head reveal">
         <h2>Kontakt</h2>
-        <p class="muted">Snabbaste sättet att nå mig.</p>
+        <p class="muted"></p>
       </div>
 
       <div class="card reveal contact">
         <div>
-          <p><strong>Email:</strong> <a class="link" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM</a></p>
-          <p><strong>Telefon:</strong> +46 79-077 41 61</p>
+          <p><strong>Email:</strong> <a class="link" href="mailto:HIDRO-KOURKIS@HOTMAIL.COM">HIDRO-KOURKIS@HOTMAIL.COM</a></p>
+          <p><strong>Phone:</strong> <a class="link" href="tel:+46790774161">+46 79-077 41 61</a></p>
           <p><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noreferrer">linkedin.com/in/hidro-kourkis</a></p>
         </div>
 
-       <form class="form" id="contactForm">
-  <label>
-    Namn
-    <input type="text" name="name" required placeholder="Ditt namn" />
-  </label>
+        <form class="form" id="contactForm">
+          <label>
+            Namn
+            <input type="text" name="name" required placeholder="Ditt namn" />
+          </label>
 
-  <label>
-    Email
-    <input type="email" name="email" required placeholder="din@email.com" />
-  </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="din@email.com" />
+          </label>
 
-  <label>
-    Meddelande
-    <textarea name="message" required placeholder="Skriv ditt meddelande här..."></textarea>
-  </label>
+          <label>
+            Meddelande
+            <textarea name="message" required placeholder="Skriv ditt meddelande här..."></textarea>
+          </label>
 
-  <!-- Honeypot (spam-skydd): ska vara tomt -->
-  <div class="hp" aria-hidden="true">
-    <label>Om du är människa, lämna detta tomt</label>
-    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-  </div>
+          <!-- Honeypot -->
+          <div class="hp" aria-hidden="true">
+            <label>Leave this empty</label>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+          </div>
 
-  <button class="btn" id="sendBtn" type="submit">
-    <span class="btn-text">Skicka</span>
-    <span class="btn-spinner" aria-hidden="true"></span>
-  </button>
+          <button class="btn" id="sendBtn" type="submit">
+            <span class="btn-text">Skicka</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
 
-  <p class="muted small" id="formHint">Jag återkommer så snabbt som möjligt.</p>
-</form>
-
-<!-- Toast -->
-<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-
-
+          <p class="muted small" id="formHint">Jag återkommer så snabbt som möjligt.</p>
+        </form>
       </div>
     </div>
   </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 </main>
 
 <footer class="footer">
