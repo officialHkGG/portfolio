@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="sv" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask Hidro AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="logo" href="index.html#top">Hidro<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html#projects">Projekt</a>
+      <a href="index.html#contact">Kontakt</a>
+      <a href="ask.html">Ask AI</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1 class="headline">Ask about me</h1>
+      <p class="muted">Ask anything about my background, skills, internships, or projects.</p>
+    </div>
+
+    <div class="card">
+      <div id="chat" class="chat"></div>
+
+      <form id="askForm" class="form">
+        <label>
+          Question
+          <input id="q" name="q" required placeholder="e.g. What did you do at Spend Ninja?" />
+        </label>
+        <button class="btn" id="askBtn" type="submit">
+          <span class="btn-text">Ask</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="muted small" id="hint">Tip: Ask about tech stack, LIA, or what I’m looking for.</p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Change this to your Worker URL later:
+  const API_URL = "https://YOUR-WORKER.yourname.workers.dev/ask";
+
+  const chat = document.getElementById("chat");
+  const form = document.getElementById("askForm");
+  const q = document.getElementById("q");
+  const btn = document.getElementById("askBtn");
+  const hint = document.getElementById("hint");
+
+  function addMsg(role, text){
+    const el = document.createElement("div");
+    el.className = "msg " + role;
+    el.textContent = text;
+    chat.appendChild(el);
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function setLoading(on){
+    btn.classList.toggle("loading", on);
+    btn.querySelector(".btn-text").textContent = on ? "Thinking..." : "Ask";
+  }
+
+  addMsg("assistant", "Hi! Ask me about Hidro’s background, skills, internships, or projects.");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const question = q.value.trim();
+    if(!question) return;
+
+    addMsg("user", question);
+    q.value = "";
+    setLoading(true);
+    hint.textContent = "Answering…";
+
+    try{
+      const res = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question })
+      });
+
+      if(!res.ok) throw new Error("Bad response");
+      const data = await res.json();
+      addMsg("assistant", data.answer || "No answer returned.");
+      hint.textContent = "Ask another question!";
+    }catch(err){
+      addMsg("assistant", "Sorry — the AI service is not reachable right now.");
+      hint.textContent = "Try again in a moment.";
+    }finally{
+      setLoading(false);
+    }
+  });
+</script>
+</body>
+</html>

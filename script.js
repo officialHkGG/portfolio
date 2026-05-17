@@ -57,24 +57,26 @@ sections.forEach(s => activeIO.observe(s));
 // Projects data (edit these)
 const projects = [
   {
-    title: "REST API – Spring Boot",
-    desc: "Structured REST API with validation, service layer and clean architecture principles.",
-    tags: ["Java", "Spring Boot", "REST"],
-    github: "#",
-    live: "#"
+    title: "Job CRM",
+    desc: "Fullstack CRM application for managing job applications.",
+    tags: ["Java", "Spring Boot", "React", "PostgreSQL"],
+    github: "https://github.com/officialHkGG/job-crm",
+    live: "https://job-crm-six.vercel.app/"
   },
+
   {
-    title: "Dockerized App + DB",
-    desc: "Containerized backend with database configuration via env vars and reproducible local setup.",
-    tags: ["Docker", "SQL", "Config"],
-    github: "#",
-    live: "#"
+    title: "Portfolio Website",
+    desc: "My personal developer portfolio.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/officialHkGG/portfolio",
+    live: "https://your-portfolio.vercel.app"
   },
+
   {
-    title: "OpenCV Pipeline",
-    desc: "Image-processing pipeline in Python integrated with Java backend for automation.",
-    tags: ["Python", "OpenCV", "Integration"],
-    github: "#",
+    title: "Bostadskollen",
+    desc: "Java application project.",
+    tags: ["Java"],
+    github: "https://github.com/officialHkGG/Bostadskollen",
     live: "#"
   }
 ];
