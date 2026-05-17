@@ -73,12 +73,12 @@ const projects = [
   },
 
   {
-    title: "Bostadskollen",
-    desc: "Java application project.",
-    tags: ["Java"],
-    github: "https://github.com/officialHkGG/Bostadskollen",
-    live: "#"
-  }
+  title: "Bostadskollen",
+  desc: "A smart housing discovery platform built with Java that aggregates rental listings, tracks new opportunities, and helps users find safer housing faster.",
+  tags: ["Java", "Spring Boot", "PostgreSQL", "Redis", "Docker"],
+  github: "https://github.com/officialHkGG/Bostadsk-",
+  live: "#"
+}
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
