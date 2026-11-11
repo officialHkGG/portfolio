@@ -20,3 +20,6 @@
 .hero-content{position:relative;z-index:5;display:grid;grid-template-columns:minmax(0,1.16fr) minmax(320px,.84fr);align-items:center;gap:45px}
 .hero-content .hero-copy,.hero-content .hero-panel{min-width:0}
 @media(max-width:900px){.hero-content{grid-template-columns:1fr;gap:35px}}
+
+/* Playback is intentionally unavailable for small screens and reduced-motion users. */
+@media(max-width:760px),(prefers-reduced-motion:reduce){.hero-video-controls{display:none}}
