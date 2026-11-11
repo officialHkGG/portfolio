@@ -36,6 +36,13 @@
   </header>
   <main id="main">
     <section class="hero shell" id="top">
+      <div class="cinematic-bg" id="cinematic-bg" aria-hidden="true">
+        <video id="hero-ambient-video" class="ambient-video" muted loop playsinline preload="none" tabindex="-1"></video>
+        <div class="cinematic-grid"></div><div class="cinematic-glow glow-a"></div><div class="cinematic-glow glow-b"></div>
+        <div class="code-scene"><div class="code-window"><div class="code-window-top"><span></span><span></span><span></span><small>app / engineering</small></div><div class="code-lines"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i><i class="c6"></i><i class="c7"></i><i class="c8"></i></div></div></div>
+      </div>
+      <div class="hero-video-controls"><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pause animated background"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span data-i18n="pauseMotion">Pause background</span></button><span class="motion-caption" data-i18n="decorativeVideo">Ambient visual · project links below</span></div>
+      <div class="hero-content">
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="available">OPEN TO OPPORTUNITIES · STOCKHOLM</span></div>
         <p class="hero-kicker">HIDRO KOURKIS <span class="line"></span> SOFTWARE DEVELOPMENT & IT</p>
@@ -55,8 +62,17 @@
         <div class="panel-metrics"><div><strong>2025</strong><small data-i18n="graduated">Graduated</small></div><div><strong>02</strong><small data-i18n="internships">Dev internships</small></div><div><strong>SV / EN</strong><small data-i18n="languages">Languages</small></div></div>
         <p class="panel-foot">JAVA <span>✳</span> SPRING BOOT <span>✳</span> REACT <span>✳</span> PYTHON</p>
       </aside>
+      </div>
+      <div class="hero-reel" aria-label="Featured projects">
+        <div class="hero-reel-header"><span data-i18n="reelTitle">FEATURED WORK · REAL PROJECTS</span><span class="reel-pulse" aria-hidden="true"></span></div>
+        <div class="hero-reel-grid">
+          <a href="https://job-crm-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="reel-project"><span class="reel-project-icon" aria-hidden="true">▦</span><span><strong>Job CRM</strong><small>Next.js / Supabase</small></span><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/officialHkGG/Bostadsk-" target="_blank" rel="noopener noreferrer" class="reel-project"><span class="reel-project-icon" aria-hidden="true">⌘</span><span><strong>Bostadskollen</strong><small>Spring Boot / Docker</small></span><span aria-hidden="true">↗</span></a>
+          <a href="#projects" class="reel-project"><span class="reel-project-icon" aria-hidden="true">◇</span><span><strong>Lisora QMS</strong><small>Next.js / TypeScript</small></span><span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
     </section>
-    <section class="section shell" id="about">
+    <section class="section shell" id="about"
       <div class="section-intro"><span class="section-index">01 / <span data-i18n="navAbout">About</span></span><h2 data-i18n="aboutHeading">Technology is more than a career choice.</h2><p data-i18n="aboutText">I've been curious about computers since I was 15–16 and built my first PC at 17. That interest evolved into a Java Developer diploma from Nackademin, two development internships, and hands-on work helping people troubleshoot technology.</p></div>
       <div class="two-cards">
         <article class="info-card"><div class="card-symbol" aria-hidden="true">⌘</div><h3 data-i18n="developmentTitle">Software development</h3><p data-i18n="developmentText">Backend APIs, databases, full-stack applications and AI integrations. I focus on clear structure, useful features and code I can explain.</p><a class="inline-link" href="#projects" data-i18n="seeProjects">View selected projects ↗</a></article>
