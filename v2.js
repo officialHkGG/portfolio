@@ -51,3 +51,23 @@ document.addEventListener("visibilitychange",updateBackground);
 prefersReducedMotion.addEventListener?.("change",updateBackground);
 mobileMedia.addEventListener?.("change",updateBackground);
 updateBackground();
+
+/* The illustrated reel is NOT a real screen recording.
+   GitHub's UI must receive assets/portfolio-showreel.gif separately.
+   The existing CSS cinematic background remains the fallback if it is absent. */
+const showreelLayer=document.getElementById("showreel-gif");
+if(showreelLayer){
+  const reel=new Image();
+  reel.onload=()=>{
+    if(!reel.naturalWidth)return;
+    showreelLayer.style.backgroundImage='url("assets/portfolio-showreel.gif")';
+    cinematicBackground.classList.add("has-showreel");
+  };
+  if(!mobileMedia.matches&&!prefersReducedMotion.matches&&!saveData)reel.src="assets/portfolio-showreel.gif";
+}
+const originalUpdateBackground=updateBackground;
+updateBackground=function(){
+  originalUpdateBackground();
+  cinematicBackground.classList.toggle("showreel-frozen",!shouldAnimate());
+};
+updateBackground();
