@@ -1,7 +1,7 @@
 "use strict";
 const projectData=[
-{title:"Lisora QMS",glyph:"QMS",image:"assets/lisora-qms-showcase.webp",type:{en:"Independent full-stack project",sv:"Eget fullstackprojekt"},description:{en:"A quality management system prototype with modules for documents, audits, CAPA, training and risk management. Designed around structured workflows and traceability.",sv:"En prototyp för kvalitetsledning med moduler för dokument, revisioner, CAPA, utbildning och riskhantering. Byggd kring strukturerade flöden och spårbarhet."},tags:["Next.js","TypeScript","Prisma","SQL"],github:null,live:null},
-{title:"Job CRM",glyph:"CRM",image:"assets/job-crm-showcase.webp",type:{en:"Full-stack web application",sv:"Fullstack-webbapplikation"},description:{en:"A personal job application tracker featuring a dashboard and job management views. Built with Next.js and Supabase.",sv:"En webbapp för att följa jobbansökningar med dashboard och vyer för att hantera ansökningar. Byggd med Next.js och Supabase."},tags:["Next.js","React","Supabase","TypeScript"],github:"https://github.com/officialHkGG/job-crm",live:"https://job-crm-six.vercel.app/"},
+{title:"Lisora QMS",glyph:"QMS",image:"assets/lisora-qms-showcase.png",type:{en:"Independent full-stack project",sv:"Eget fullstackprojekt"},description:{en:"A quality management system prototype with modules for documents, audits, CAPA, training and risk management. Designed around structured workflows and traceability.",sv:"En prototyp för kvalitetsledning med moduler för dokument, revisioner, CAPA, utbildning och riskhantering. Byggd kring strukturerade flöden och spårbarhet."},tags:["Next.js","TypeScript","Prisma","SQL"],github:null,live:null},
+{title:"Job CRM",glyph:"CRM",image:"assets/job-crm-showcase.png",type:{en:"Full-stack web application",sv:"Fullstack-webbapplikation"},description:{en:"A personal job application tracker featuring a dashboard and job management views. Built with Next.js and Supabase.",sv:"En webbapp för att följa jobbansökningar med dashboard och vyer för att hantera ansökningar. Byggd med Next.js och Supabase."},tags:["Next.js","React","Supabase","TypeScript"],github:"https://github.com/officialHkGG/job-crm",live:"https://job-crm-six.vercel.app/"},
 {title:"Bostadskollen",glyph:"BK",type:{en:"Java backend project",sv:"Java backend-projekt"},description:{en:"A housing listings backend with REST endpoints and a Docker-based development stack. Built using Spring Boot, PostgreSQL and Redis.",sv:"En backend för bostadsannonser med REST-endpoints och en Docker-baserad utvecklingsmiljö. Byggd med Spring Boot, PostgreSQL och Redis."},tags:["Java","Spring Boot","PostgreSQL","Redis","Docker"],github:"https://github.com/officialHkGG/Bostadsk-",live:null},
 {title:"AIpol",glyph:"AI",type:{en:"Internship project · Linespotting",sv:"Praktikprojekt · Linespotting"},description:{en:"Worked with Java backend development, web content processing and API documentation during an internship, using Spring Boot, Thymeleaf and Jsoup.",sv:"Arbetade med Java-backend, hantering av webbinnehåll och API-dokumentation under praktik med Spring Boot, Thymeleaf och Jsoup."},tags:["Java","Spring Boot","Thymeleaf","Jsoup"],github:null,live:null}
 ];
@@ -24,9 +24,9 @@ $("#year").textContent=String(new Date().getFullYear());
 
 /* Static showcase gallery: images are illustrative, not UI screenshots. */
 const showcases={
-  job:{src:"assets/job-crm-showcase.webp",alt:"Illustrative concept artwork for Job CRM",label:"Job CRM"},
-  lisora:{src:"assets/lisora-qms-showcase.webp",alt:"Illustrative concept artwork for Lisora QMS",label:"Lisora QMS"},
-  java:{src:"assets/java-showcase.webp",alt:"Illustrative Java and Spring Boot coding artwork",label:"Java / Spring Boot"}
+  job:{src:"assets/job-crm-showcase.png",alt:"Illustrative concept artwork for Job CRM",label:"Job CRM"},
+  lisora:{src:"assets/lisora-qms-showcase.png",alt:"Illustrative concept artwork for Lisora QMS",label:"Lisora QMS"},
+  java:{src:"assets/java-showcase.png",alt:"Illustrative Java and Spring Boot coding artwork",label:"Java / Spring Boot"}
 };
 const showcaseImage=document.getElementById("showcase-image");
 const showcaseTabs=[...document.querySelectorAll("[data-showcase]")];
