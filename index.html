@@ -36,13 +36,6 @@
   </header>
   <main id="main">
     <section class="hero shell" id="top">
-      <div class="cinematic-bg" id="cinematic-bg" aria-hidden="true">
-        <video id="hero-ambient-video" class="ambient-video" muted loop playsinline preload="none" tabindex="-1"></video>
-        <div class="showreel-gif" id="showreel-gif" aria-hidden="true"><img class="showreel-image" src="assets/portfolio-showreel.gif?v=20261111-2" alt="" loading="eager" decoding="async" fetchpriority="low"></div>
-        <div class="cinematic-grid"></div><div class="cinematic-glow glow-a"></div><div class="cinematic-glow glow-b"></div>
-        <div class="code-scene"><div class="code-window"><div class="code-window-top"><span></span><span></span><span></span><small>app / engineering</small></div><div class="code-lines"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i><i class="c6"></i><i class="c7"></i><i class="c8"></i></div></div></div>
-      </div>
-      <div class="hero-video-controls"><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pause animated background"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span data-i18n="pauseMotion">Pause background</span></button><span class="motion-caption" data-i18n="decorativeVideo">Illustrative showcase · explore real projects below</span></div>
       <div class="hero-content">
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="available">OPEN TO OPPORTUNITIES · STOCKHOLM</span></div>
@@ -57,10 +50,18 @@
       </div>
       <aside class="hero-panel" aria-label="Profile highlights">
         <div class="panel-top"><span class="tiny-label">PROFILE / 01</span><span class="code-dots" aria-hidden="true">● ● ●</span></div>
-        <div class="profile-preview" id="profile-preview" aria-label="Illustrative technology showreel">
-          <span class="preview-label" data-i18n="previewLabel">ILLUSTRATED TECH SHOWREEL</span>
-          <div class="preview-motion" id="preview-motion" aria-hidden="true"><img class="preview-image" src="assets/portfolio-showreel.gif?v=20261111-2" alt="" loading="eager" decoding="async" fetchpriority="low"></div>
-          <span class="preview-footnote" data-i18n="previewNote">Concept visuals — see real project links below</span>
+        <div class="showcase" aria-label="Illustrative project showcase">
+          <div class="showcase-topline"><span data-i18n="previewLabel">PROJECT SHOWCASE</span><span class="showcase-kind" data-i18n="conceptArt">Illustrative visuals</span></div>
+          <div class="showcase-images" id="showcase-images">
+            <img id="showcase-image" src="assets/job-crm-showcase.webp" alt="Illustrative Job CRM dashboard artwork" width="480" height="270" fetchpriority="high" decoding="async">
+            <span class="showcase-fallback" aria-hidden="true">▦ &nbsp; Job CRM</span>
+          </div>
+          <div class="showcase-controls" role="group" aria-label="Choose a showcase image">
+            <button type="button" class="showcase-tab active" aria-pressed="true" data-showcase="job" data-i18n="showcaseJob">Job CRM</button>
+            <button type="button" class="showcase-tab" aria-pressed="false" data-showcase="lisora" data-i18n="showcaseLisora">Lisora QMS</button>
+            <button type="button" class="showcase-tab" aria-pressed="false" data-showcase="java" data-i18n="showcaseJava">Java / Spring</button>
+          </div>
+          <p class="showcase-note" data-i18n="previewNote">Concept artwork, not screenshots. Explore real projects below.</p>
         </div>
         <div class="terminal-icon" aria-hidden="true">&lt;/&gt;</div>
         <p class="panel-title" data-i18n="panelTitle">Developer mindset.<br>Problem-solver by nature.</p>
