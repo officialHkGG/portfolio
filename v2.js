@@ -52,16 +52,13 @@ prefersReducedMotion.addEventListener?.("change",updateBackground);
 mobileMedia.addEventListener?.("change",updateBackground);
 updateBackground();
 
-/* Illustrated showreel uses native <img> tags to prevent an empty preview
-   caused by JavaScript load gates. Motion is disabled on request, small screens,
-   reduced-motion devices, or data-saving connections. */
-const showreelImages=[...document.querySelectorAll(".showreel-image,.preview-image")];
+/* The GIF is visible by default on desktops. Never gate initial visibility on
+   a JavaScript play promise. User pause and accessibility are class-based. */
 const reelWrapper=document.getElementById("profile-preview");
 function syncShowreel(){
-  const visible=shouldAnimate();
-  cinematicBackground.classList.toggle("showreel-frozen",!visible);
-  if(reelWrapper)reelWrapper.classList.toggle("is-paused",!visible);
-  for(const img of showreelImages)img.hidden=!visible;
+  const stopped=!shouldAnimate();
+  cinematicBackground.classList.toggle("showreel-frozen",stopped);
+  if(reelWrapper)reelWrapper.classList.toggle("is-paused",stopped);
 }
 const baseUpdateBackground=updateBackground;
 updateBackground=function(){baseUpdateBackground();syncShowreel()};
