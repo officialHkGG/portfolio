@@ -1,284 +1,96 @@
 <!doctype html>
-<html lang="sv" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hidro Kourkis | Java Backend Developer</title>
-  <meta name="description" content="Hidro Kourkis – Java backend developer focused on clean architecture, APIs and AI integration." />
-
-  <!-- Open Graph (pro share preview) -->
-  <meta property="og:title" content="Hidro Kourkis – Java Backend Developer" />
-  <meta property="og:description" content="Backend-focused Java developer. Clean architecture, REST APIs, Docker, AI integration." />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e19">
+  <meta name="description" content="Hidro Kourkis — Stockholm-based junior Java developer with Spring Boot, React, Python, AI integration and practical IT support experience. Explore projects and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hidro Kourkis | Software Developer & IT Support">
+  <meta property="og:description" content="Software development, real-world internships and hands-on technical troubleshooting. Based in Stockholm.">
+  <meta property="og:url" content="https://portfolio-eight-sand-2xd99wvahs.vercel.app/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://portfolio-eight-sand-2xd99wvahs.vercel.app/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23090e19'/%3E%3Ctext x='10' y='43' font-family='Arial' font-size='30' font-weight='bold' fill='%239ac3ff'%3EHK%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="v2.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Hidro Kourkis","jobTitle":"Junior Software Developer","address":{"@type":"PostalAddress","addressLocality":"Stockholm","addressCountry":"SE"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Nackademin"},"sameAs":["https://github.com/officialHkGG","https://www.linkedin.com/in/hidro-kourkis-462089275/"]}</script>
+  <script src="v2.js" defer></script>
+  <title>Hidro Kourkis | Software Developer & IT Support — Stockholm</title>
 </head>
-
 <body>
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="logo" href="#top">Hidro<span>.</span></a>
-
-    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-expanded="false">☰</button>
-
-    <nav class="nav" id="nav">
-  <a href="#about">Om</a>
-  <a href="#focus">Fokus</a>
-  <a href="#featured">Featured</a>
-  <a href="#projects">Projekt</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Kontakt</a>
-
-  <button class="icon-btn" id="langBtn" aria-label="Change language" title="Change language">EN</button>
-  <button class="icon-btn theme" id="themeBtn" aria-label="Byt tema" title="Byt tema">🌙</button>
-</nav>
-  </div>
-</header>
-
-<main id="top">
-  <!-- HERO (Brand) -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="reveal">
-        <p class="pill">Java • Backend • AI integration</p>
-
-        <h1 class="headline">
-          Building reliable backend systems with Java.
-        </h1>
-
-        <p class="lead">
-          Nyexaminerad Javautvecklare med praktisk erfarenhet från LIA i skarpa projekt.
-          Jag bygger strukturerade API:er, jobbar gärna med databaser och Docker,
-          och har erfarenhet av att integrera AI-flöden med Java & Python.
-        </p>
-
-        <div class="cta">
-          <a class="btn" href="#featured">Se featured case</a>
-          <a class="btn ghost" href="#projects">Projekt</a>
-          <a class="btn ghost" href="assets/examensbevis.pdf" target="_blank" rel="noreferrer">Examensbevis (PDF)</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a href="#top" class="brand" aria-label="Hidro Kourkis home"><span class="brand-mark">HK</span><span>Hidro<span class="accent">.</span></span></a>
+      <button id="menu-toggle" class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav">☰</button>
+      <nav id="nav" class="nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#it-support" data-i18n="navSupport">IT Support</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <button id="language-toggle" class="nav-control" type="button" aria-label="Change language">SV</button>
+        <a class="nav-cv" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-i18n="diploma">Diploma ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="available">OPEN TO OPPORTUNITIES · STOCKHOLM</span></div>
+        <p class="hero-kicker">HIDRO KOURKIS <span class="line"></span> SOFTWARE DEVELOPMENT & IT</p>
+        <h1><span data-i18n="heroFirst">Building software.</span><br><span class="gradient-text" data-i18n="heroSecond">Solving real problems.</span></h1>
+        <p class="hero-lead" data-i18n="heroLead">Junior Java developer with two software development internships and hands-on IT troubleshooting experience. I build practical applications and enjoy making technology work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects"><span data-i18n="explore">Explore projects</span><span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#documents"><span data-i18n="documents">CV & documents</span><span aria-hidden="true">↓</span></a>
         </div>
-
-        <div class="meta">
-          <span>📍 Stockholm/Solna</span>
-          <span>💼 Öppen för juniorroll / trainee</span>
-          <span>🚗 B-körkort</span>
-        </div>
+        <div class="hero-meta"><span>⌁ Stockholm, Sweden</span><span data-i18n="roles">Junior developer · IT support · IT technician</span><span data-i18n="license">B driving licence</span></div>
       </div>
-
-      <aside class="card contact-card reveal">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a class="link" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM</a></p>
-        <p><strong>Phone:</strong> <a class="link" href="tel:+46790774161">+46 79-077 41 61</a></p>
-        <p><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noreferrer">linkedin.com/in/hidro-kourkis</a></p>
-        <p><strong>GitHub:</strong> <a class="link" href="https://github.com/officialhkgg" target="_blank" rel="noreferrer">github.com/officialhkgg</a></p>
-        <div class="mini">
-          <span class="chip">Java</span>
-          <span class="chip">Spring</span>
-          <span class="chip">SQL</span>
-          <span class="chip">Docker</span>
-        </div>
+      <aside class="hero-panel" aria-label="Profile highlights">
+        <div class="panel-top"><span class="tiny-label">PROFILE / 01</span><span class="code-dots" aria-hidden="true">● ● ●</span></div>
+        <div class="terminal-icon" aria-hidden="true">&lt;/&gt;</div>
+        <p class="panel-title" data-i18n="panelTitle">Developer mindset.<br>Problem-solver by nature.</p>
+        <p class="panel-description" data-i18n="panelDescription">Interested in computers since my teens, from building my first PC at 17 to developing backend services and full-stack projects.</p>
+        <div class="panel-metrics"><div><strong>2025</strong><small data-i18n="graduated">Graduated</small></div><div><strong>02</strong><small data-i18n="internships">Dev internships</small></div><div><strong>SV / EN</strong><small data-i18n="languages">Languages</small></div></div>
+        <p class="panel-foot">JAVA <span>✳</span> SPRING BOOT <span>✳</span> REACT <span>✳</span> PYTHON</p>
       </aside>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Om mig</h2>
-        <p class="muted"></p>
+    </section>
+    <section class="section shell" id="about">
+      <div class="section-intro"><span class="section-index">01 / <span data-i18n="navAbout">About</span></span><h2 data-i18n="aboutHeading">Technology is more than a career choice.</h2><p data-i18n="aboutText">I've been curious about computers since I was 15–16 and built my first PC at 17. That interest evolved into a Java Developer diploma from Nackademin, two development internships, and hands-on work helping people troubleshoot technology.</p></div>
+      <div class="two-cards">
+        <article class="info-card"><div class="card-symbol" aria-hidden="true">⌘</div><h3 data-i18n="developmentTitle">Software development</h3><p data-i18n="developmentText">Backend APIs, databases, full-stack applications and AI integrations. I focus on clear structure, useful features and code I can explain.</p><a class="inline-link" href="#projects" data-i18n="seeProjects">View selected projects ↗</a></article>
+        <article class="info-card"><div class="card-symbol" aria-hidden="true">⌁</div><h3 data-i18n="supportTitle">IT support & troubleshooting</h3><p data-i18n="supportText">Practical PC and connectivity troubleshooting, customer communication and on-site technical assistance through Hemfixarna.</p><a class="inline-link" href="#it-support" data-i18n="seeSupport">Explore support experience ↗</a></article>
       </div>
-
-      <div class="grid-2">
-        <div class="card reveal">
-          <h3>Profil</h3>
-          <p>
-            Jag är driven och ansvarsfull, trivs i team och tar gärna ansvar för att
-            leverera stabila lösningar. Jag jobbar strukturerat, gillar att felsöka och
-            strävar efter ren, underhållbar kod.
-          </p>
-          <p class="muted small">
-            Styrkor: problemlösning, noggrannhet, kommunikation, stresstålighet.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Bakgrund</h3>
-          <p>
-            YH-examen som Javautvecklare (Nackademin, 2023–2025) med två LIA-perioder där jag
-            jobbat i skarpa team och leveranser.
-          </p>
-          <p class="muted small">
-            På fritiden bygger jag datorer — det har gett mig teknisk förståelse och bra felsökningsvana.
-          </p>
-        </div>
+    </section>
+    <section class="section shell" id="experience">
+      <div class="section-intro"><span class="section-index">02 / <span data-i18n="navExperience">Experience</span></span><h2 data-i18n="experienceHeading">Real experience. Real learning.</h2><p data-i18n="experienceSub">Education and applied experience that inform how I work.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">2025</div><div><p class="overline">EDUCATION</p><h3>Nackademin · Java Developer</h3><p data-i18n="eduDesc">Higher Vocational Education diploma (400 YH credits). Java, Spring Boot, SQL, frontend, DevOps, security and two internships.</p></div><a class="inline-link" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-i18n="viewDiploma">View diploma ↗</a></article>
+        <article class="timeline-item"><div class="timeline-date">2025</div><div><p class="overline">INTERNSHIP / LIA 2</p><h3>Spend Ninja</h3><p data-i18n="spendDesc">Worked on Python/OpenCV-based AI functionality and backend integration, exploring ways to process data and improve workflows.</p></div><span class="timeline-tag">Python · OpenCV · Java</span></article>
+        <article class="timeline-item"><div class="timeline-date">2024</div><div><p class="overline">INTERNSHIP / LIA 1</p><h3>Linespotting AB</h3><p data-i18n="linesDesc">Built Java backend features and worked on AIpol using Spring Boot, Thymeleaf, Jsoup, databases and API documentation.</p></div><span class="timeline-tag">Java · Spring Boot · SQL</span></article>
+        <article class="timeline-item"><div class="timeline-date">2026</div><div><p class="overline">TECHNICAL SERVICES</p><h3>Hemfixarna</h3><p data-i18n="hemDesc">Practical customer-facing IT support, troubleshooting computers, TVs, connectivity and software/account setup.</p></div><span class="timeline-tag" data-i18n="onsite">On-site support</span></article>
       </div>
-    </div>
-  </section>
-
-  <!-- FOCUS (Brand positioning) -->
-  <section id="focus" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>What I focus on</h2>
-        <p class="muted"></p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card reveal">
-          <h3>Backend & APIs</h3>
-          <p class="muted">
-            Designar REST API:er, service-lager och tydliga domänmodeller med fokus på struktur och kvalitet.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Databaser & Docker</h3>
-          <p class="muted">
-            Jobbar gärna med SQL och containerisering för robusta, reproducerbara miljöer och deploy-flöden.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <h3>AI integration</h3>
-          <p class="muted">
-            Integrerar AI-flöden i system — t.ex. OpenCV/ML i Python kopplat till Java backend och API:er.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED CASE STUDY (this is what makes it look pro) -->
-  <section id="featured" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Featured case</h2>
-        <p class="muted"></p>
-      </div>
-
-      <article class="card featured reveal">
-        <div class="row">
-          <h3>AI-Integration i plattform (LIA – Spend Ninja)</h3>
-          <span class="muted">Java + Python + OpenCV</span>
-        </div>
-
-        <p class="muted">
-          <strong>Problem:</strong> Plattformen behövde smartare automation/bildanalys för att minska manuellt arbete.
-        </p>
-        <p class="muted">
-          <strong>Lösning:</strong> Byggde AI-funktioner med OpenCV/ML och integrerade dem i plattformen via Java backend.
-        </p>
-
-        <div class="kv">
-          <div><span class="k">Tech</span><span class="v">Java, Python, OpenCV, REST, Docker</span></div>
-          <div><span class="k">Ansvar</span><span class="v">Utveckling, integration, testning, förbättringar</span></div>
-          <div><span class="k">Lärdom</span><span class="v">Integration mellan ML-flöden och backend, robusthet i pipeline</span></div>
-        </div>
-
-        <div class="links">
-          <a class="btn small ghost" href="#projects">Se fler projekt</a>
-          <a class="btn small" href="#contact">Kontakta mig</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- PROJECTS (auto from JS) -->
-  <section id="projects" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Projekt</h2>
-        <p class="muted"></p>
-      </div>
-      <div id="projectsGrid" class="projects"></div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Skills</h2>
-        <p class="muted"></p>
-      </div>
-
-      <div class="grid-2">
-        <div class="card reveal">
-          <h3>Core skills</h3>
-          <div id="skillsList" class="skills"></div>
-          <p class="muted small"></p>
-        </div>
-
-        <div class="card reveal">
-          <h3>Tools</h3>
-          <p class="muted">IntelliJ IDEA, VS Code, MySQL Workbench, Docker Desktop, PyCharm, Visual Studio, Microsoft Office</p>
-          <h3>Languages</h3>
-          <ul class="muted">
-            <li>Svenska – Modersmål</li>
-            <li>Engelska – Flytande</li>
-            <li>Arabiska – Flytande</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT (Formspree + toast) -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>Kontakt</h2>
-        <p class="muted"></p>
-      </div>
-
-      <div class="card reveal contact">
-        <div>
-          <p><strong>Email:</strong> <a class="link" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM</a></p>
-          <p><strong>Phone:</strong> <a class="link" href="tel:+46790774161">+46 79-077 41 61</a></p>
-          <p><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noreferrer">linkedin.com/in/hidro-kourkis</a></p>
-        </div>
-
-        <form class="form" id="contactForm">
-          <label>
-            Namn
-            <input type="text" name="name" required placeholder="Ditt namn" />
-          </label>
-
-          <label>
-            Email
-            <input type="email" name="email" required placeholder="din@email.com" />
-          </label>
-
-          <label>
-            Meddelande
-            <textarea name="message" required placeholder="Skriv ditt meddelande här..."></textarea>
-          </label>
-
-          <!-- Honeypot -->
-          <div class="hp" aria-hidden="true">
-            <label>Leave this empty</label>
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-          </div>
-
-          <button class="btn" id="sendBtn" type="submit">
-            <span class="btn-text">Skicka</span>
-            <span class="btn-spinner" aria-hidden="true"></span>
-          </button>
-
-          <p class="muted small" id="formHint">Jag återkommer så snabbt som möjligt.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-</main>
-
-<footer class="footer">
-  <div class="container">© <span id="year"></span> Hidro Kourkis</div>
-</footer>
-
-<script src="script.js"></script>
+    </section>
+    <section class="section shell" id="projects">
+      <div class="section-intro"><span class="section-index">03 / <span data-i18n="navProjects">Projects</span></span><h2 data-i18n="projectsHeading">Selected work, not just a tech list.</h2><p data-i18n="projectsSub">A few projects that show what I've actually built. Source code or demos are linked when publicly available.</p></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <section class="section shell" id="skills">
+      <div class="section-intro"><span class="section-index">04 / <span data-i18n="skills">Skills</span></span><h2 data-i18n="skillsHeading">Tools I use to build and solve.</h2><p data-i18n="skillsSub">Grouped by actual hands-on experience rather than arbitrary percentage ratings.</p></div>
+      <div class="skill-groups"><article class="info-card"><h3>Backend & data</h3><div class="tag-row"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>SQL</span><span>PostgreSQL</span><span>Python</span></div></article><article class="info-card"><h3>Frontend & tooling</h3><div class="tag-row"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML/CSS</span><span>Git/GitHub</span><span>Docker</span></div></article><article class="info-card"><h3 data-i18n="skillsOther">Additional experience</h3><div class="tag-row"><span>OpenCV</span><span>Next.js</span><span>Prisma</span><span>IntelliJ</span><span>VS Code</span><span>Postman</span></div></article></div>
+    </section>
+    <section class="section shell" id="it-support">
+      <div class="support-feature"><div><span class="section-index">05 / IT SUPPORT</span><h2 data-i18n="itHeading">I understand the code — and the computer running it.</h2><p data-i18n="itText">My interest in IT started long before my developer education. I built my first computer at 17, enjoy diagnosing hardware and software issues, and have supported customers through Hemfixarna. That practical perspective helps me communicate clearly and troubleshoot systematically.</p><a class="button secondary" href="#contact"><span data-i18n="getInTouch">Get in touch</span> ↗</a></div><div class="support-list"><div><span>01</span><p data-i18n="supportOne">PC hardware and system troubleshooting</p></div><div><span>02</span><p data-i18n="supportTwo">Connectivity, TV and home technology</p></div><div><span>03</span><p data-i18n="supportThree">Software setup and account assistance</p></div><div><span>04</span><p data-i18n="supportFour">Customer-facing technical communication</p></div></div></div>
+    </section>
+    <section class="section shell" id="documents">
+      <div class="section-intro"><span class="section-index">06 / <span data-i18n="documents">Documents</span></span><h2 data-i18n="docsHeading">Everything a recruiter needs.</h2><p data-i18n="docsSub">Relevant documents, without making anyone search for them.</p></div>
+      <div class="document-grid"><a class="document-card" href="assets/examensbevis.pdf" target="_blank" rel="noopener"><span class="document-icon">↗</span><strong data-i18n="diplomaFull">Nackademin Diploma</strong><small>PDF · 2025</small></a><div class="document-card pending"><span class="document-icon">↓</span><strong data-i18n="cvTitle">Curriculum Vitae</strong><small data-i18n="cvPending">PDF · to be added</small></div><div class="document-card pending"><span class="document-icon">↓</span><strong data-i18n="pdfTitle">Project Portfolio</strong><small data-i18n="portfolioPending">PDF · to be added</small></div></div>
+    </section>
+    <section class="section shell" id="contact">
+      <div class="contact-feature"><span class="section-index">07 / <span data-i18n="navContact">Contact</span></span><h2 data-i18n="contactHeading">Let's build something useful.</h2><p data-i18n="contactText">I'm looking for junior developer, IT support and IT technician opportunities in Stockholm. If my experience could be a fit, I'd be glad to talk.</p><div class="contact-actions"><a class="button primary" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM"><span data-i18n="emailMe">Email me</span> ↗</a><a class="button secondary" href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button secondary" href="https://github.com/officialHkGG" target="_blank" rel="noopener">GitHub ↗</a></div><a class="contact-email" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM</a></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Hidro Kourkis</span><span data-i18n="footer">Built with care · Stockholm, Sweden</span><a href="#top" data-i18n="top">Back to top ↑</a></div></footer>
 </body>
 </html>
