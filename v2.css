@@ -23,3 +23,12 @@
 
 /* Playback is intentionally unavailable for small screens and reduced-motion users. */
 @media(max-width:760px),(prefers-reduced-motion:reduce){.hero-video-controls{display:none}}
+
+/* Optional illustrated showcase, supplied separately as assets/portfolio-showreel.gif.
+   This layer appears only after the image loads successfully. */
+.showreel-gif{position:absolute;inset:0;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;opacity:0;filter:saturate(.82) brightness(.88);z-index:1;transition:opacity .4s}
+.cinematic-bg.has-showreel .showreel-gif{opacity:.68}
+.cinematic-bg.has-showreel .code-scene{opacity:.23}
+.cinematic-bg.has-showreel .ambient-video{display:none}
+.cinematic-bg.showreel-frozen .showreel-gif{display:none}
+@media(max-width:760px),(prefers-reduced-motion:reduce){.showreel-gif{display:none!important}}
