@@ -59,3 +59,16 @@
   .showreel-image,.preview-image{display:none!important}
   .profile-preview{background:linear-gradient(135deg,#182c4a,#0c1726)}
 }
+
+/* Definitive showreel display rules: avoid old JS hidden state and duplicate CSS. */
+@media (min-width:761px) and (prefers-reduced-motion:no-preference){
+  .cinematic-bg:not(.showreel-frozen) .showreel-gif{display:block!important;opacity:.95!important}
+  .profile-preview:not(.is-paused) .preview-motion{display:block!important;opacity:1!important}
+  .profile-preview:not(.is-paused) .preview-image{display:block!important;visibility:visible!important;opacity:1!important}
+}
+.profile-preview.is-paused .preview-motion{display:none!important}
+.cinematic-bg.showreel-frozen .showreel-gif{display:none!important}
+.profile-preview{background:radial-gradient(ellipse at 80% 35%,#365c84,#102039 62%,#091421)}
+/* Static illustrative code-panel fallback remains meaningful when motion is disabled. */
+.profile-preview.is-paused:before{content:"</>  JAVA  ·  REACT  ·  SPRING BOOT";position:absolute;inset:0;display:grid;place-items:center;color:#b4cfff;font:600 12px ui-monospace,monospace;letter-spacing:.08em}
+@media(max-width:760px),(prefers-reduced-motion:reduce){.profile-preview:before{content:"</>  JAVA  ·  REACT  ·  SPRING BOOT";position:absolute;inset:0;display:grid;place-items:center;color:#b4cfff;font:600 12px ui-monospace,monospace;letter-spacing:.08em}}
