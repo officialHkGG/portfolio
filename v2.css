@@ -32,3 +32,18 @@
 .cinematic-bg.has-showreel .ambient-video{display:none}
 .cinematic-bg.showreel-frozen .showreel-gif{display:none}
 @media(max-width:760px),(prefers-reduced-motion:reduce){.showreel-gif{display:none!important}}
+
+/* Show the animated work unmistakably while retaining readable hero copy. */
+.cinematic-bg:after{background:linear-gradient(90deg,#090e19 0%,#090e19f0 26%,#090e19aa 58%,#090e1940 100%),linear-gradient(0deg,#090e19 0,transparent 26%)}
+.cinematic-bg.has-showreel .showreel-gif{opacity:.92;filter:saturate(.95) brightness(.88)}
+.hero-panel{background:linear-gradient(150deg,#122037ef,#0d1525ee);backdrop-filter:blur(13px)}
+.profile-preview{position:relative;height:170px;overflow:hidden;border:1px solid #47658a;border-radius:12px;background:linear-gradient(140deg,#101a2b,#263f63);margin-top:27px}
+.preview-motion{position:absolute;inset:0;background-repeat:no-repeat;background-size:cover;background-position:center;opacity:0}
+.profile-preview.is-loaded .preview-motion{opacity:1}
+.profile-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#07101c88,transparent 38%,#08101cbf 100%);pointer-events:none}
+.preview-label,.preview-footnote{position:absolute;left:13px;z-index:2;font-size:10px;font-weight:800;letter-spacing:.09em;color:#e5f1ff;text-shadow:0 1px 8px #000}
+.preview-label{top:10px}.preview-footnote{bottom:11px;font-size:9px;font-weight:500;letter-spacing:0}
+.hero-panel .terminal-icon{margin-top:18px;width:48px;height:48px;font-size:18px}
+.hero-panel .panel-title{margin-top:15px;font-size:24px}
+@media(max-width:760px){.profile-preview{height:155px}.profile-preview .preview-motion{display:none!important}.profile-preview{background:radial-gradient(circle at 80% 20%,#335e88,#101a2b 80%)}}
+@media(prefers-reduced-motion:reduce){.preview-motion{display:none!important}}
