@@ -2,109 +2,277 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#151718">
-  <title>Hidro Kourkis – Javautvecklare & IT-support i Stockholm</title>
-  <meta name="description" content="Hidro Kourkis, Javautvecklare utbildad på Nackademin. Projekt inom Spring Boot, Next.js och AI-integration samt praktisk erfarenhet av IT-support i Stockholm.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="Hidro Kourkis — Javautvecklare från Nackademin med erfarenhet av Spring Boot, fullstackutveckling, AI-integration och IT-support. Projekt och erfarenhet i Stockholm.">
   <link rel="canonical" href="https://portfolio-eight-sand-2xd99wvahs.vercel.app/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hidro Kourkis – Javautvecklare & IT-support">
-  <meta property="og:description" content="Utbildning, utvecklingsprojekt och praktisk IT-erfarenhet i Stockholm.">
+  <meta property="og:site_name" content="Hidro Kourkis — Portfolio">
+  <meta property="og:title" content="Hidro Kourkis — Java Developer &amp; IT Support">
+  <meta property="og:description" content="Utveckling med fokus på enkelhet, struktur och användbarhet. Se verkliga projekt, erfarenhet och utbildning.">
   <meta property="og:url" content="https://portfolio-eight-sand-2xd99wvahs.vercel.app/">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151718'/%3E%3Ctext x='10' y='43' font-family='Arial' font-size='29' font-weight='bold' fill='%23d2e0c6'%3EHK%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="v2.css?v=editorial-1">
-  <script src="v2.js?v=editorial-1" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Hidro Kourkis","jobTitle":"Java Developer","address":{"@type":"PostalAddress","addressLocality":"Stockholm","addressCountry":"SE"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Nackademin"},"sameAs":["https://github.com/officialHkGG","https://www.linkedin.com/in/hidro-kourkis-462089275/"]}</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%23101112'/%3E%3Ctext x='10' y='43' font-family='Arial' font-size='29' font-weight='bold' fill='%23ebedef'%3EHK%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="v4.css">
+  <script src="v4.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Hidro Kourkis","jobTitle":"Junior Java Developer","address":{"@type":"PostalAddress","addressLocality":"Stockholm","addressCountry":"SE"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Nackademin"},"sameAs":["https://github.com/officialHkGG","https://www.linkedin.com/in/hidro-kourkis-462089275/"],"knowsAbout":["Java","Spring Boot","React","TypeScript","PostgreSQL","Docker","IT support"]}
+  </script>
+  <title>Hidro Kourkis — Javautvecklare &amp; IT-support, Stockholm</title>
 </head>
 <body>
-  <a class="skip" href="#main" data-en="Skip to content">Hoppa till innehållet</a>
-  <header class="header">
-    <div class="shell header-inner">
-      <a class="brand" href="#top">Hidro Kourkis<span class="brand-dot">.</span></a>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Öppna meny"><span aria-hidden="true">☰</span></button>
-      <nav class="nav" id="nav" aria-label="Huvudnavigation">
-        <a href="#projects" data-en="Projects">Projekt</a>
+  <a class="skip-link" href="#main" data-en="Skip to content">Hoppa till innehållet</a>
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a href="#top" class="wordmark" aria-label="Hidro Kourkis — startsida">
+        <span class="monogram" aria-hidden="true">H<span class="mark-k">K</span></span>
+        <span>Hidro Kourkis<span class="period">.</span></span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Öppna menyn">
+        <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Huvudnavigation">
+        <a href="#work" data-en="Work">Projekt</a>
+        <a href="#approach" data-en="Approach">Arbetssätt</a>
         <a href="#experience" data-en="Experience">Erfarenhet</a>
         <a href="#about" data-en="About">Om mig</a>
-        <a href="#contact" data-en="Contact">Kontakt</a>
-        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+        <a href="#contact" class="nav-contact" data-en="Contact ↗">Kontakt ↗</a>
+        <button class="language-button" id="language-button" type="button" aria-label="Switch to English">EN</button>
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <section class="hero shell" id="top" aria-labelledby="hero-title">
-      <div class="hero-main">
-        <p class="availability"><span class="status-dot" aria-hidden="true"></span><span data-en="Open to opportunities in Stockholm">Öppen för möjligheter i Stockholm</span></p>
-        <h1 id="hero-title"><span data-en="I build software that">Jag bygger mjukvara som</span><br><em data-en="solves real problems.">löser riktiga problem.</em></h1>
-        <p class="hero-role" data-en="Hidro Kourkis · Java Developer & IT support">Hidro Kourkis · Javautvecklare & IT-support</p>
-        <p class="hero-lead" data-en="I graduated from Nackademin in 2025 and have worked with Java backend development, AI integration and technical support. I enjoy building useful software, learning how systems work and solving problems in practice.">Jag tog examen som Javautvecklare på Nackademin 2025 och har erfarenhet av backendutveckling, AI-integration och teknisk support. Jag tycker om att bygga användbar mjukvara, förstå hur system fungerar och lösa problem i praktiken.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects"><span data-en="Explore my work">Se mina projekt</span><span aria-hidden="true">↓</span></a>
-          <a class="button secondary" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM"><span data-en="Contact me">Kontakta mig</span><span aria-hidden="true">↗</span></a>
+    <section class="hero section-dark" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="eyebrow hero-eyebrow">
+          <span class="presence-dot" aria-hidden="true"></span>
+          <span data-en="Available for junior roles · Stockholm">Öppen för juniora roller · Stockholm</span>
         </div>
-        <div class="hero-links"><a href="https://github.com/officialHkGG" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="Diploma (PDF) ↗">Examensbevis (PDF) ↗</a></div>
+        <p class="hero-intro" data-en="Hidro Kourkis · Java Developer / IT Support">Hidro Kourkis · Javautvecklare / IT-support</p>
+        <h1 id="hero-title">
+          <span data-en="Complex inside.">Komplex under ytan.</span>
+          <span class="muted-headline" data-en="Simple to use.">Enkel att använda.</span>
+        </h1>
+        <p class="hero-description" data-en="I build thoughtful software — from Java backends to full-stack applications. My goal is simple: technology that works, makes sense, and solves a real problem.">
+          Jag bygger genomtänkt mjukvara – från Java-backend till fullstackapplikationer. Målet är enkelt: teknik som fungerar, är lätt att förstå och löser riktiga problem.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="pill-button pill-primary"><span data-en="Explore my work">Utforska mina projekt</span><span aria-hidden="true">↓</span></a>
+          <a href="mailto:HIDRO-KOURKIS@OUTLOOK.COM" class="pill-button pill-outline"><span data-en="Get in touch">Kontakta mig</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-bottom" aria-label="Korta fakta">
+          <div><span class="fact-label" data-en="Education">Utbildning</span><strong>Nackademin · 2025</strong></div>
+          <div><span class="fact-label" data-en="Experience">Erfarenhet</span><strong data-en="Two development internships">Två utvecklingspraktiker</strong></div>
+          <div><span class="fact-label" data-en="Also experienced in">Också erfaren inom</span><strong>IT-support / Hemfixarna</strong></div>
+        </div>
       </div>
-      <aside class="hero-aside" aria-label="Profil">
-        <p class="aside-label" data-en="In brief">Kort om mig</p>
-        <dl class="profile-facts">
-          <div><dt data-en="Based in">Ort</dt><dd>Stockholm, Sverige</dd></div>
-          <div><dt data-en="Education">Utbildning</dt><dd><span data-en="Java Developer">Javautvecklare</span><small>Nackademin · 2023–2025</small></dd></div>
-          <div><dt data-en="Experience">Erfarenhet</dt><dd>2 <span data-en="development internships">LIA-perioder</span><small>Linespotting · Spend Ninja</small></dd></div>
-          <div><dt data-en="Looking for">Söker</dt><dd data-en="Junior developer / IT support">Junior utvecklare / IT-support</dd></div>
-        </dl>
-        <div class="stack-line"><span>Java</span><span>Spring Boot</span><span>SQL</span><span>React</span><span>Docker</span></div>
-      </aside>
+      <div class="hero-ambient" aria-hidden="true"></div>
     </section>
-    <section class="section shell" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="kicker" data-en="Selected work">Utvalda arbeten</p><h2 id="projects-title" data-en="Projects">Projekt</h2></div><a class="text-link" href="https://github.com/officialHkGG" target="_blank" rel="noopener noreferrer" data-en="More on GitHub ↗">Mer på GitHub ↗</a></div>
-      <p class="section-description" data-en="A closer look at what I build, the technology behind it, and what I learned along the way. Every project is described based on work I've actually done.">En närmare titt på vad jag bygger, tekniken bakom och vad jag lärde mig. Varje projekt utgår från arbete jag faktiskt gjort.</p>
-      <div class="project-list">
-        <article class="project-row">
-          <div class="project-number">01</div><div class="project-main"><p class="project-kind" data-en="Personal project · Java backend">Eget projekt · Java backend</p><h3>Bostadskollen</h3><p data-en="A housing listings backend with REST endpoints for registration and listings, built around Spring Boot, PostgreSQL and Redis. The development environment runs in Docker.">En backend för bostadsannonser med REST-endpoints för registrering och annonser, byggd med Spring Boot, PostgreSQL och Redis. Utvecklingsmiljön körs i Docker.</p><div class="tech-list"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div><details class="project-notes"><summary><span data-en="How I built it">Så byggde jag det</span><span aria-hidden="true" class="details-symbol">+</span></summary><div class="project-note-content"><div><strong data-en="Architecture">Arkitektur</strong><p data-en="Spring Boot REST API with PostgreSQL for persistent data and Redis in the development stack. Docker makes the environment easier to run consistently.">Spring Boot REST API med PostgreSQL för persistent data och Redis i utvecklingsmiljön. Docker gör miljön enklare att köra konsekvent.</p></div><div><strong data-en="What it demonstrates">Det visar projektet</strong><p data-en="Backend design, API endpoints and a reproducible multi-service development setup.">Backendstruktur, API-endpoints och en reproducerbar utvecklingsmiljö med flera tjänster.</p></div></div></details></div><div class="project-links"><a href="https://github.com/officialHkGG/Bostadsk-" target="_blank" rel="noopener noreferrer" data-en="Source code ↗">Källkod ↗</a></div>
-        </article>
-        <article class="project-row">
-          <div class="project-number">02</div><div class="project-main"><p class="project-kind" data-en="Personal project · Full-stack">Eget projekt · Fullstack</p><h3>Job CRM</h3><p data-en="A web application I built to organize my own job search. It brings applications, a dashboard and job-management views into one place using Next.js and Supabase.">En webbapp jag byggt för att strukturera mitt eget jobbsökande. Den samlar ansökningar, en översiktsvy och jobbhantering på ett ställe med Next.js och Supabase.</p><div class="tech-list"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span></div><details class="project-notes"><summary><span data-en="How I built it">Så byggde jag det</span><span aria-hidden="true" class="details-symbol">+</span></summary><div class="project-note-content"><div><strong data-en="Why I built it">Varför jag byggde det</strong><p data-en="I wanted a practical way to track my own job applications rather than rely on scattered notes.">Jag ville ha ett praktiskt sätt att följa mina jobbansökningar istället för att använda utspridda anteckningar.</p></div><div><strong data-en="What it demonstrates">Det visar projektet</strong><p data-en="A Next.js interface, connected data with Supabase and product thinking based on a personal need.">Ett gränssnitt i Next.js, data via Supabase och produkttänk som utgår från ett verkligt behov.</p></div></div></details></div><div class="project-links"><a href="https://job-crm-six.vercel.app/" target="_blank" rel="noopener noreferrer" data-en="Live demo ↗">Öppna demo ↗</a><a href="https://github.com/officialHkGG/job-crm" target="_blank" rel="noopener noreferrer" data-en="Source code ↗">Källkod ↗</a></div>
-        </article>
-        <article class="project-row">
-          <div class="project-number">03</div><div class="project-main"><p class="project-kind" data-en="Personal project · Full-stack">Eget projekt · Fullstack</p><h3>Lisora QMS</h3><p data-en="A quality management system prototype for document control, audits, CAPA, training and risk management. My focus is on structured workflows and traceability.">En prototyp för ett kvalitetsledningssystem med dokumenthantering, revisioner, CAPA, utbildning och riskhantering. Fokus ligger på strukturerade arbetsflöden och spårbarhet.</p><div class="tech-list"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>SQLite</span></div><details class="project-notes"><summary><span data-en="How I built it">Så byggde jag det</span><span aria-hidden="true" class="details-symbol">+</span></summary><div class="project-note-content"><div><strong data-en="The challenge">Utmaningen</strong><p data-en="Designing connected workflows for documents, audits, corrective actions, training and risks without making the product difficult to navigate.">Att bygga sammanhängande flöden för dokument, revisioner, korrigerande åtgärder, utbildning och risker utan att göra produkten svår att använda.</p></div><div><strong data-en="What it demonstrates">Det visar projektet</strong><p data-en="Structured feature design, full-stack application architecture and attention to traceability.">Strukturerad funktionsdesign, fullstackarkitektur och fokus på spårbarhet.</p></div></div></details></div><div class="project-links"><span class="unpublished" data-en="Private repository">Privat repository</span></div>
-        </article>
-        <article class="project-row">
-          <div class="project-number">04</div><div class="project-main"><p class="project-kind" data-en="Internship · Linespotting AB">LIA · Linespotting AB</p><h3>AIpol</h3><p data-en="During my internship I contributed to Java backend functionality, web content processing, database integration and API documentation using Spring Boot, Thymeleaf and Jsoup.">Under min LIA bidrog jag till Java-backend, bearbetning av webbinnehåll, databasintegration och API-dokumentation med Spring Boot, Thymeleaf och Jsoup.</p><div class="tech-list"><span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>Jsoup</span></div><details class="project-notes"><summary><span data-en="My contribution">Mitt bidrag</span><span aria-hidden="true" class="details-symbol">+</span></summary><div class="project-note-content"><div><strong data-en="During the internship">Under praktiken</strong><p data-en="Worked on Spring Boot features and web-content processing with Thymeleaf, Jsoup and databases in the AIpol project.">Arbetade med Spring Boot-funktioner och hantering av webbinnehåll med Thymeleaf, Jsoup och databaser i AIpol-projektet.</p></div><div><strong data-en="What it demonstrates">Det visar erfarenheten</strong><p data-en="Contributing to existing code, learning unfamiliar systems and documenting APIs as part of a team.">Att bidra till befintlig kod, sätta sig in i okända system och dokumentera API:er som del av ett team.</p></div></div></details></div><div class="project-links"><span class="unpublished" data-en="Internship project">LIA-projekt</span></div>
-        </article>
-      </div>
-    </section>
-    <section class="section shell" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading"><div><p class="kicker" data-en="My background">Min bakgrund</p><h2 id="experience-title" data-en="Experience & education">Erfarenhet & utbildning</h2></div></div>
-      <div class="experience-list">
-        <article class="experience-row"><div class="date">2026</div><div><h3>Hemfixarna</h3><p class="role" data-en="IT technician">IT-tekniker</p><p data-en="Customer-facing technical assistance, troubleshooting computers, TVs and internet connections, and helping with software and account setup.">Teknisk hjälp på plats hos kunder, felsökning av datorer, TV och internet samt hjälp med mjukvara och kontoinställningar.</p></div></article>
-        <article class="experience-row"><div class="date" data-en="Jan – Apr 2025">Jan – apr 2025</div><div><h3>Spend Ninja</h3><p class="role" data-en="Software development internship · LIA 2">Systemutveckling · LIA 2</p><p data-en="Worked with Python and OpenCV-based AI functionality, and explored how AI and backend services can work together to process data.">Arbetade med AI-funktioner baserade på Python och OpenCV samt integration mellan AI-flöden och backend för databearbetning.</p></div></article>
-        <article class="experience-row"><div class="date" data-en="Oct – Dec 2024">Okt – dec 2024</div><div><h3>Linespotting AB</h3><p class="role" data-en="Java development internship · LIA 1">Javautveckling · LIA 1</p><p data-en="Contributed to the AIpol project with Java, Spring Boot, Thymeleaf, web scraping, database work and API documentation.">Bidrog till projektet AIpol med Java, Spring Boot, Thymeleaf, web scraping, databasarbete och API-dokumentation.</p></div></article>
-        <article class="experience-row"><div class="date">2023–2025</div><div><h3>Nackademin</h3><p class="role" data-en="Java Developer · 400 YH credits">Javautvecklare · 400 YH-poäng</p><p data-en="Higher vocational education in Java, backend, databases, frontend, software security and DevOps, including two internships.">Yrkeshögskoleutbildning inom Java, backend, databaser, frontend, IT-säkerhet och DevOps, inklusive två LIA-perioder.</p><a class="text-link" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="View diploma (PDF) ↗">Visa examensbevis (PDF) ↗</a></div></article>
+
+    <section class="work-introduction section-dark" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="section-label" data-en="01 / Selected work">01 / Utvalda projekt</span>
+          <h2 id="work-title" data-en="Ideas made useful.">Idéer som blir användbara.</h2>
+          <p data-en="Projects that reflect my curiosity, engineering decisions and willingness to work through complex problems. The diagrams are conceptual; the descriptions and links refer to real work.">
+            Projekt som visar hur jag tänker, vilka tekniska val jag gör och hur jag arbetar med problem. Diagrammen är illustrationer – beskrivningarna och länkarna handlar om verkligt arbete.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="section shell" id="about" aria-labelledby="about-title">
-      <div class="section-heading"><div><p class="kicker" data-en="Behind the code">Bakom koden</p><h2 id="about-title" data-en="About me">Om mig</h2></div></div>
-      <div class="about-grid">
-        <div class="about-copy"><p data-en="My interest in computers started in my teens. At 17, I built my first PC, which made me want to learn more about how hardware and software fit together.">Mitt intresse för datorer började i tonåren. När jag var 17 byggde jag min första dator, vilket gjorde mig nyfiken på hur hårdvara och mjukvara hänger ihop.</p><p data-en="Today I spend time building my own applications and learning new tools. My Java education and internships have given me a foundation in software development, while my work at Hemfixarna has taught me to listen to users and troubleshoot in real situations.">I dag bygger jag egna applikationer och lär mig nya verktyg. Min Javautbildning och mina LIA-perioder har gett mig en grund inom systemutveckling, medan arbetet på Hemfixarna har lärt mig att lyssna på användare och felsöka i verkliga situationer.</p><p data-en="I'm looking for a junior software development or IT support role in Stockholm where I can contribute, learn from experienced colleagues and keep growing.">Jag söker en junior roll inom systemutveckling eller IT-support i Stockholm där jag kan bidra, lära mig av erfarna kollegor och fortsätta utvecklas.</p></div>
-        <div class="skills-panel" id="skills"><h3 data-en="Technical skills">Tekniska kunskaper</h3><dl class="skill-list"><div><dt>Backend</dt><dd>Java, Spring Boot, REST, Python</dd></div><div><dt>Frontend</dt><dd>React, Next.js, TypeScript, HTML/CSS</dd></div><div><dt data-en="Databases">Databaser</dt><dd>PostgreSQL, MySQL, SQLite, Prisma</dd></div><div><dt data-en="Tools">Verktyg</dt><dd>Docker, Git, GitHub, IntelliJ, VS Code, Postman</dd></div><div><dt>AI</dt><dd>Python, OpenCV</dd></div><div><dt data-en="Languages">Språk</dt><dd data-en="Swedish, English, Arabic">Svenska, engelska, arabiska</dd></div></dl></div>
+
+    <article class="feature feature-dark lisora-feature" id="lisora" aria-labelledby="lisora-title">
+      <div class="container">
+        <div class="feature-copy reveal">
+          <p class="feature-index">01 / LISORA QMS <span class="feature-private" data-en="PRIVATE PROJECT">PRIVAT PROJEKT</span></p>
+          <h3 id="lisora-title">Quality, organized.</h3>
+          <p class="feature-tagline" data-en="One system. Clearer workflows.">Ett system. Tydligare arbetsflöden.</p>
+          <p class="feature-summary" data-en="A quality management application I built to connect document control, audits, CAPA, training and risk management. Designed around structure, traceability and day-to-day usability.">
+            Ett kvalitetsledningssystem jag byggt för att samla dokumentstyrning, revisioner, CAPA, utbildning och riskhantering. Byggt med fokus på struktur, spårbarhet och användbarhet.
+          </p>
+          <div class="tech-meta" aria-label="Teknik"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>SQLite</span></div>
+          <details class="case-expand">
+            <summary><span data-en="Explore the technical decisions">Utforska de tekniska valen</span><span aria-hidden="true">+</span></summary>
+            <div class="case-expand-body">
+              <p data-en="The challenge was keeping connected quality workflows understandable: documents need revisions, audits surface findings, and corrective actions require traceability. I organized these responsibilities into separate modules.">
+                Utmaningen var att göra sammanhängande kvalitetsflöden begripliga: dokument behöver versioner, revisioner leder till observationer och åtgärder måste kunna följas upp. Jag delade därför upp ansvaret i tydliga moduler.
+              </p>
+              <p data-en="This is an independent project and is not presented as a production deployment or a certified QMS.">Det här är ett eget utvecklingsprojekt, inte ett produktionssystem eller ett certifierat QMS.</p>
+            </div>
+          </details>
+        </div>
+
+        <figure class="product-art product-art-lisora reveal" aria-label="Illustration av Lisora QMS moduler">
+          <div class="art-topline"><span class="art-brand"><span class="art-brand-mark">L</span> Lisora</span><span class="art-meta">SYSTEM OVERVIEW / CONCEPT</span></div>
+          <div class="lisora-art-content">
+            <div class="art-heading-group"><p class="art-mini" data-en="QUALITY MANAGEMENT">KVALITETSLEDNING</p><div class="art-headline" data-en="Connected by design.">Allt hänger ihop.</div></div>
+            <div class="module-grid">
+              <div class="module module-primary"><span class="module-number">01</span><span class="module-symbol" aria-hidden="true">▤</span><strong>Documents</strong><small data-en="Version control">Versionshantering</small></div>
+              <div class="module"><span class="module-number">02</span><span class="module-symbol" aria-hidden="true">◎</span><strong>Audits</strong><small data-en="Review">Granskning</small></div>
+              <div class="module"><span class="module-number">03</span><span class="module-symbol" aria-hidden="true">↗</span><strong>CAPA</strong><small data-en="Actions">Åtgärder</small></div>
+              <div class="module"><span class="module-number">04</span><span class="module-symbol" aria-hidden="true">◇</span><strong>Risks</strong><small data-en="Assessment">Bedömning</small></div>
+            </div>
+            <div class="art-bottomline"><span>DOCUMENTS → AUDITS → ACTIONS</span><span>01 — 04</span></div>
+          </div>
+          <figcaption data-en="Conceptual visualization of implemented modules — not an application screenshot.">Illustration av systemets moduler – inte en skärmbild från applikationen.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature feature-light job-feature" id="job-crm" aria-labelledby="job-title">
+      <div class="container feature-layout">
+        <div class="feature-copy reveal">
+          <p class="feature-index">02 / JOB CRM <span data-en="LIVE DEMO">LIVE DEMO</span></p>
+          <h3 id="job-title">Less tracking.<br>More clarity.</h3>
+          <p class="feature-tagline" data-en="Built for a problem I actually had.">Byggt för ett problem jag själv hade.</p>
+          <p class="feature-summary" data-en="I wanted a better way to organize my job search, so I built one. Job CRM brings applications, notes and progress into a single place using Next.js and Supabase.">
+            Jag ville få bättre ordning på mitt jobbsökande och byggde därför ett eget verktyg. Job CRM samlar ansökningar, anteckningar och uppföljning på ett ställe med Next.js och Supabase.
+          </p>
+          <div class="tech-meta"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span></div>
+          <div class="feature-links">
+            <a class="subtle-link" href="https://job-crm-six.vercel.app/" target="_blank" rel="noopener noreferrer" data-en="Open live application ↗">Öppna applikationen ↗</a>
+            <a class="subtle-link" href="https://github.com/officialHkGG/job-crm" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <details class="case-expand">
+            <summary><span data-en="Why I built it">Varför jag byggde det</span><span aria-hidden="true">+</span></summary>
+            <div class="case-expand-body">
+              <p data-en="The product started with a personal need: keeping track of applications and next steps without scattered notes. The design prioritizes an overview and a predictable workflow.">
+                Projektet började med ett verkligt behov: att hålla reda på ansökningar och nästa steg utan utspridda anteckningar. Designen fokuserar på överblick och ett förutsägbart arbetsflöde.
+              </p>
+            </div>
+          </details>
+        </div>
+        <figure class="product-art product-art-job reveal">
+          <div class="browser-chrome" aria-hidden="true"><span class="chrome-dots"><i></i><i></i><i></i></span><span>job-crm / workflow</span><span>↗</span></div>
+          <div class="job-art-content">
+            <div class="board-intro"><div><span class="board-mark">J.</span><span class="board-title">Job CRM</span></div><small data-en="APPLICATION FLOW / CONCEPT">ANSÖKNINGSFLÖDE / ILLUSTRATION</small></div>
+            <div class="board-heading" data-en="Keep every next step in sight.">Ha koll på varje nästa steg.</div>
+            <div class="pipeline" role="img" aria-label="Illustration av olika steg i en jobbansökan">
+              <div class="pipeline-step"><span class="step-no">01</span><strong data-en="Saved">Sparad</strong><span class="pipeline-bar"></span></div>
+              <div class="pipeline-step"><span class="step-no">02</span><strong data-en="Applied">Ansökt</strong><span class="pipeline-bar"></span></div>
+              <div class="pipeline-step active-step"><span class="step-no">03</span><strong data-en="Interview">Intervju</strong><span class="pipeline-bar"></span></div>
+            </div>
+            <div class="board-detail" aria-hidden="true"><span class="detail-line long"></span><span class="detail-line mid"></span><span class="detail-line short"></span></div>
+          </div>
+          <figcaption data-en="Illustration of the workflow, not actual application data.">Illustration av arbetsflödet, inte riktiga ansökningsuppgifter.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature feature-dark bostad-feature" id="bostadskollen" aria-labelledby="bostad-title">
+      <div class="container feature-layout feature-reverse">
+        <div class="feature-copy reveal">
+          <p class="feature-index">03 / BOSTADSKOLLEN <span data-en="OPEN SOURCE">ÖPPEN KÄLLKOD</span></p>
+          <h3 id="bostad-title" data-en="Built from the backend up.">Byggt från backend och ut.</h3>
+          <p class="feature-tagline" data-en="Good systems begin with solid foundations.">Bra system börjar med en stabil grund.</p>
+          <p class="feature-summary" data-en="A housing listings backend with REST endpoints and a multi-service development environment. Spring Boot handles the application, PostgreSQL the persistent data and Docker the environment.">
+            En backend för bostadsannonser med REST-endpoints och en utvecklingsmiljö med flera tjänster. Spring Boot hanterar applikationen, PostgreSQL lagrar data och Docker håller ihop miljön.
+          </p>
+          <div class="tech-meta"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
+          <div class="feature-links"><a class="subtle-link" href="https://github.com/officialHkGG/Bostadsk-" target="_blank" rel="noopener noreferrer" data-en="Explore source code ↗">Utforska källkoden ↗</a></div>
+          <details class="case-expand">
+            <summary><span data-en="Explore the architecture">Utforska arkitekturen</span><span aria-hidden="true">+</span></summary>
+            <div class="case-expand-body"><p data-en="The project separates request handling, data persistence and supporting services. Docker Compose provides a reproducible local environment.">
+              Projektet separerar hantering av API-anrop, datalagring och stödjande tjänster. Docker Compose ger en reproducerbar lokal utvecklingsmiljö.</p></div>
+          </details>
+        </div>
+        <figure class="product-art product-art-api reveal">
+          <div class="api-topbar"><span class="terminal-dots" aria-hidden="true">● ● ●</span><span>API / SPRING BOOT</span><span>⌘</span></div>
+          <div class="api-visual-content">
+            <p class="api-small-label">BOSTADSKOLLEN / SERVICE MAP</p>
+            <div class="api-stack">
+              <div class="api-layer"><span class="api-layer-no">01</span><div><strong>REST API</strong><small>GET /api/listings</small></div><span class="api-layer-state">HTTP</span></div>
+              <div class="api-connector" aria-hidden="true"></div>
+              <div class="api-layer"><span class="api-layer-no">02</span><div><strong>Spring Boot</strong><small data-en="Application &amp; business logic">Applikation &amp; logik</small></div><span class="api-layer-state">JAVA</span></div>
+              <div class="api-connector" aria-hidden="true"></div>
+              <div class="api-layer"><span class="api-layer-no">03</span><div><strong>PostgreSQL + Redis</strong><small data-en="Storage and services">Lagring och tjänster</small></div><span class="api-layer-state">DATA</span></div>
+            </div>
+            <div class="api-foot">DOCKER · REPRODUCIBLE ENVIRONMENT</div>
+          </div>
+          <figcaption data-en="Simplified architecture diagram based on the project technologies.">Förenklat arkitekturdiagram baserat på projektets teknik.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <section class="approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-intro centered reveal">
+          <span class="section-label" data-en="02 / How I think">02 / Mitt arbetssätt</span>
+          <h2 id="approach-title" data-en="The small details matter.">Detaljerna gör skillnaden.</h2>
+          <p data-en="I care about the experience of using software as much as the logic that makes it work. That's what connects my development work with hands-on IT troubleshooting.">
+            Jag bryr mig lika mycket om upplevelsen av att använda programvara som logiken bakom den. Det är vad som förenar min utvecklingserfarenhet med praktisk IT-felsökning.
+          </p>
+        </div>
+        <div class="approach-grid">
+          <div class="approach-item reveal"><span>01</span><h3 data-en="Understand the problem">Förstå problemet</h3><p data-en="I start with what needs to work, for whom, and why — before choosing frameworks or features.">Jag börjar med vad som behöver fungera, för vem och varför – innan jag väljer ramverk eller funktioner.</p></div>
+          <div class="approach-item reveal"><span>02</span><h3 data-en="Build with structure">Bygg med struktur</h3><p data-en="Clear responsibilities, understandable APIs and practical tools make applications easier to maintain.">Tydliga ansvar, begripliga API:er och praktiska verktyg gör applikationer enklare att underhålla.</p></div>
+          <div class="approach-item reveal"><span>03</span><h3 data-en="Make it useful">Gör det användbart</h3><p data-en="The end result should feel simpler to the person using it — not just impressive to the developer.">Resultatet ska kännas enklare för personen som använder det – inte bara imponera på den som bygger.</p></div>
+        </div>
       </div>
     </section>
-    <section class="section shell" id="it-support" aria-labelledby="support-title">
-      <div class="section-heading"><div><p class="kicker" data-en="Hands-on technology">Praktisk teknik</p><h2 id="support-title" data-en="IT support">IT-support</h2></div></div>
-      <div class="support-grid"><p data-en="At Hemfixarna I have helped customers with everyday technical problems. I enjoy working methodically, identifying the cause of a problem and explaining solutions in an understandable way.">På Hemfixarna har jag hjälpt kunder med vardagliga teknikproblem. Jag tycker om att arbeta metodiskt, hitta orsaken till ett problem och förklara lösningen på ett begripligt sätt.</p><ul class="support-items"><li data-en="Hardware and software troubleshooting">Felsökning av hårdvara och mjukvara</li><li data-en="Internet, connectivity and TV">Internet, uppkoppling och TV</li><li data-en="Software installation and account assistance">Installationer och kontohjälp</li><li data-en="Customer service and technical communication">Kundservice och teknisk kommunikation</li></ul></div>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-layout">
+        <div class="sticky-aside reveal"><span class="section-label" data-en="03 / Journey">03 / Resan hit</span><h2 id="experience-title" data-en="Experience built in practice.">Erfarenhet byggd i praktiken.</h2><p data-en="Learning by building, testing and helping people in real situations.">Jag har lärt mig genom att bygga, testa och hjälpa människor med verkliga problem.</p></div>
+        <div class="timeline">
+          <article class="timeline-entry reveal"><span class="timeline-year">2026</span><div><h3>Hemfixarna</h3><p class="timeline-position" data-en="IT technician · Customer support">IT-tekniker · Kundsupport</p><p data-en="Hands-on troubleshooting with computers, TV, connectivity and software/account setup. Working directly with customers strengthened my ability to listen and communicate technical solutions.">Praktisk felsökning av datorer, TV, uppkoppling och mjukvara/konton. Kundkontakten har utvecklat mitt sätt att lyssna och förklara tekniska lösningar.</p></div></article>
+          <article class="timeline-entry reveal"><span class="timeline-year">2025</span><div><h3>Spend Ninja</h3><p class="timeline-position" data-en="Development internship · LIA 2">Utvecklingspraktik · LIA 2</p><p data-en="Worked with Python, OpenCV-based AI functionality and backend integration for data processing workflows.">Arbetade med Python, OpenCV-baserade AI-funktioner och backendintegration för databearbetning.</p></div></article>
+          <article class="timeline-entry reveal"><span class="timeline-year">2024</span><div><h3>Linespotting AB</h3><p class="timeline-position" data-en="Java development internship · LIA 1">Javautveckling · LIA 1</p><p data-en="Contributed to AIpol with Spring Boot, Thymeleaf, Jsoup, databases and API documentation.">Bidrog till AIpol med Spring Boot, Thymeleaf, Jsoup, databaser och API-dokumentation.</p></div></article>
+          <article class="timeline-entry reveal"><span class="timeline-year">2023–25</span><div><h3>Nackademin</h3><p class="timeline-position" data-en="Java Developer · 400 YH credits">Javautvecklare · 400 YH-poäng</p><p data-en="Higher vocational education in Java, backend, SQL, frontend, DevOps and software security, including two internships.">Yrkeshögskoleutbildning inom Java, backend, SQL, frontend, DevOps och IT-säkerhet, inklusive två LIA-perioder.</p><a class="text-arrow" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="View diploma (PDF) ↗">Visa examensbevis (PDF) ↗</a></div></article>
+        </div>
+      </div>
     </section>
-    <section class="section shell" id="documents" aria-labelledby="docs-title">
-      <div class="section-heading"><div><p class="kicker" data-en="Documents">Dokument</p><h2 id="docs-title" data-en="Qualifications">Meriter</h2></div></div>
-      <div class="document-row"><div><h3 data-en="Nackademin – Java Developer diploma">Nackademin – examensbevis Javautvecklare</h3><p data-en="2025 · Higher vocational education · 400 YH credits">2025 · Yrkeshögskoleexamen · 400 YH-poäng</p></div><a class="text-link" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="Open PDF ↗">Öppna PDF ↗</a></div>
-      <p class="document-note" data-en="My CV and additional project details are available on request.">CV och ytterligare projektinformation lämnas gärna på begäran.</p>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-main reveal">
+          <span class="section-label" data-en="04 / Beyond the code">04 / Bakom koden</span>
+          <h2 id="about-title" data-en="Curiosity started it all.">Allt började med nyfikenhet.</h2>
+          <p class="about-intro" data-en="I got interested in computers when I was around 15–16. At 17, I built my first PC. That curiosity eventually led me to study Java development and build my own applications.">
+            Mitt datorintresse började när jag var runt 15–16. När jag var 17 byggde jag min första dator. Nyfikenheten ledde så småningom till en Javautbildning och egna applikationer.
+          </p>
+          <p data-en="I like understanding both sides of technology: the code behind a system and the problems people face when using it. I'm looking for a junior role where I can keep growing alongside experienced colleagues.">
+            Jag gillar att förstå båda sidor av tekniken: koden bakom ett system och problemen som användare möter. Jag söker en junior roll där jag får fortsätta utvecklas tillsammans med erfarna kollegor.
+          </p>
+        </div>
+        <aside class="skills-summary reveal" aria-labelledby="skills-title">
+          <h3 id="skills-title" data-en="Tools & technologies">Teknik & verktyg</h3>
+          <dl>
+            <div><dt>Backend</dt><dd>Java, Spring Boot, Python, REST</dd></div>
+            <div><dt>Frontend</dt><dd>React, Next.js, TypeScript, HTML/CSS</dd></div>
+            <div><dt data-en="Data">Databaser</dt><dd>PostgreSQL, MySQL, SQLite, Prisma</dd></div>
+            <div><dt data-en="Tools">Verktyg</dt><dd>Git, Docker, GitHub Actions, Postman</dd></div>
+            <div><dt>IT</dt><dd data-en="Hardware, troubleshooting, customer support">Hårdvara, felsökning, kundsupport</dd></div>
+            <div><dt data-en="Languages">Språk</dt><dd data-en="Swedish, English, Arabic">Svenska, engelska, arabiska</dd></div>
+          </dl>
+          <a class="text-arrow" href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="Diploma — Nackademin ↗">Examensbevis — Nackademin ↗</a>
+        </aside>
+      </div>
     </section>
-    <section class="section shell contact-section" id="contact" aria-labelledby="contact-title">
-      <p class="kicker" data-en="Contact">Kontakt</p><h2 id="contact-title" data-en="I'd be happy to hear from you.">Hör gärna av dig.</h2><p data-en="I'm interested in junior developer, IT support and IT technician opportunities in Stockholm.">Jag är intresserad av juniora utvecklarroller, IT-support och IT-teknikerjobb i Stockholm.</p>
-      <a class="email-link" href="mailto:HIDRO-KOURKIS@OUTLOOK.COM">HIDRO-KOURKIS@OUTLOOK.COM <span aria-hidden="true">↗</span></a>
-      <div class="hero-links"><a href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/officialHkGG" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <span class="section-label" data-en="05 / Get in touch">05 / Ta kontakt</span>
+        <h2 id="contact-title" data-en="Let's make something useful.">Låt oss skapa något som fungerar.</h2>
+        <p data-en="I'm looking for junior developer, IT support and IT technician roles in Stockholm. Have a position in mind? I'd be glad to hear from you.">
+          Jag söker juniora roller inom systemutveckling, IT-support och IT-teknik i Stockholm. Har du en möjlighet i åtanke? Hör gärna av dig.
+        </p>
+        <a href="mailto:HIDRO-KOURKIS@OUTLOOK.COM" class="contact-email">HIDRO-KOURKIS@OUTLOOK.COM <span aria-hidden="true">↗</span></a>
+        <div class="contact-social">
+          <a href="https://github.com/officialHkGG" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/hidro-kourkis-462089275/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="assets/examensbevis.pdf" target="_blank" rel="noopener" data-en="Diploma ↗">Examensbevis ↗</a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> Hidro Kourkis</span><a href="#top" data-en="Back to top ↑">Till toppen ↑</a></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Hidro Kourkis</span>
+      <span data-en="Built with care in Stockholm">Byggd med omsorg i Stockholm</span>
+      <a href="#top" data-en="Back to top ↑">Till toppen ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
