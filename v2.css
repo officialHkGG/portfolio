@@ -138,3 +138,28 @@ h3 { font-size: 20px; letter-spacing: -.025em; font-weight: 600; line-height: 1.
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Figma V3 editorial pass: craft through hierarchy, restraint and genuine project depth */
+:root { --bg:#131615; --panel:#1c211e; --muted:#abb5ac; --subtle:#89978b; --line:#354039; --accent:#c7deb6; }
+.hero{padding-block:116px 105px;grid-template-columns:minmax(0,1.65fr) minmax(0,.80fr);gap:75px}
+.hero h1{font-size:clamp(43px,5.45vw,75px);font-weight:650;line-height:1.13;letter-spacing:-.065em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-role{font-size:18px;color:var(--text);font-weight:520;letter-spacing:-.015em;margin-top:24px}
+.hero-lead{max-width:620px;font-size:16px;margin-top:22px}
+.availability{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:650}
+.project-row{transition:background .18s ease}
+.project-row:hover{background:#ffffff04}
+.project-main{min-width:0}
+.project-notes{margin-top:17px}
+.project-notes summary{display:inline-flex;align-items:center;gap:11px;list-style:none;color:var(--accent);font-size:13px;cursor:pointer;font-weight:600;padding:7px 0}
+.project-notes summary::-webkit-details-marker{display:none}
+.project-notes summary:hover{text-decoration:underline;text-underline-offset:5px}
+.project-notes summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.details-symbol{font-size:16px;display:inline-block;transition:transform .2s ease}
+.project-notes[open] .details-symbol{transform:rotate(45deg)}
+.project-note-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:10px;border-top:1px solid var(--line);padding:19px 0 7px}
+.project-note-content strong{font-size:12px;color:var(--text)}
+.project-note-content p{font-size:13px;line-height:1.7;color:var(--muted);margin-top:7px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:40px}}
+@media(max-width:620px){.hero{padding-block:56px 48px}.hero h1{font-size:clamp(42px,10.2vw,58px)}.project-note-content{grid-template-columns:1fr;gap:17px}.project-notes{margin-top:11px}}
+@media(prefers-reduced-motion:reduce){.details-symbol{transition:none}}
